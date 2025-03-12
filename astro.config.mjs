@@ -7,5 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://arda-gunduz.github.io',
   base: 'testTd',
-  }
-);
+  vite: {
+    plugins: [tailwindcss()],
+  },
+});
