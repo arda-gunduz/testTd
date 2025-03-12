@@ -1,0 +1,10 @@
+---
+
+import BasicLayout from "./BasicLayout.astro";
+const { frontmatter } = Astro.props;
+---
+<BasicLayout title={frontmatter.title}>
+<h1>{frontmatter.title}</h1>
+<p>Écrit par {frontmatter.author}</p>
+<slot />
+</BasicLayout>
